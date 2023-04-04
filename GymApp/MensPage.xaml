@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.MensPage"
+             Title="MensPage"
+             Background="#6d9cd3"
+                          WidthRequest="600"
+             HeightRequest="675">
+    <VerticalStackLayout>
+        <Line Stroke="Red" X2="200" TranslationX="50" TranslationY="50" Margin="-20, -20, 0, 0"/>
+        <VerticalStackLayout             Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center" HorizontalOptions="Center">
+            <Label
+                Text="Step 3/5"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="64"
+            TextColor="White"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="What do you want to work on?"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                TextColor="White"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+            <Image Source="negr_2.png" HeightRequest="500"  HorizontalOptions="End" VerticalOptions="Center"  Grid.Column="1" />
+            <VerticalStackLayout Grid.Column="0">
+                <VerticalStackLayout HeightRequest="70" Grid.Column="0"></VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Border       Margin="10"   HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center" StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+                        <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                            <Button x:Name="Btn1" Clicked="Btn1_Clicked" Grid.Column="1"  BackgroundColor="White" BorderWidth="1"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="hands.png"  HeightRequest="60" WidthRequest="60" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Center"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </HorizontalStackLayout>
+                <Border        Margin="10"      HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center"  StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+                    <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+
+                        <Button x:Name="Btn2" Grid.Column="1" Clicked="Btn1_Clicked" BackgroundColor="White" BorderWidth="1"/>
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="spine.png"  HeightRequest="60" WidthRequest="60" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Center"/>
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Border      Margin="10"        HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center"  StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+                    <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                        <Button x:Name="Btn3" Clicked="Btn1_Clicked" Grid.Column="1" BackgroundColor="White" BorderWidth="1"/>
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="torso.png"  HeightRequest="60" WidthRequest="60" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Center"/>
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Border          Margin="10"    HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center"  StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+                    <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                        <Button x:Name="Btn4" Clicked="Btn1_Clicked" Grid.Column="1" BackgroundColor="White" BorderWidth="1"/>
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="legs.png" HeightRequest="60" WidthRequest="60" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Center"/>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>

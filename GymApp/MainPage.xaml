@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.MainPage"
+             Background="#6d9cd3"
+             WidthRequest="600"
+             HeightRequest="675">
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Label
+                Text="Step 1/5"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="64"
+            TextColor="White"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="What is your purpose?"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                TextColor="White"
+                HorizontalOptions="Center" />
+
+        <Border             HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center" StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+            <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                <Button x:Name="Btn1" Grid.Column="1" Clicked="Btn1_Clicked" BackgroundColor="White" BorderWidth="1"/>
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="label.png" Grid.Column="1" HeightRequest="60" WidthRequest="120" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    <Image Source="icons_1.png" Grid.Column="0" HeightRequest="50" WidthRequest="80" InputTransparent="True" HorizontalOptions="End" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border             HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center"  StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+            <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                <Button x:Name="Btn2" Grid.Column="1" BackgroundColor="White" BorderWidth="1"/>
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="label1.png" Grid.Column="1" HeightRequest="60" WidthRequest="120" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    <Image Source="icons_2.png" Grid.Column="0" HeightRequest="50" WidthRequest="80" InputTransparent="True" HorizontalOptions="End" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border             HeightRequest="70"
+            WidthRequest="250" HorizontalOptions="Center"  StrokeThickness="1"
+        StrokeShape="RoundRectangle 100" >
+            <Grid BackgroundColor="White" HorizontalOptions="Center" WidthRequest="250">
+                <Button x:Name="Btn3" Grid.Column="1" BackgroundColor="White" BorderWidth="1"/>
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                    <Image Source="label2.png" Grid.Column="1" HeightRequest="60" WidthRequest="120" IsEnabled="False" InputTransparent="True" VerticalOptions="Start" HorizontalOptions="Start"/>
+                        <Image Source="icons_3.png" Grid.Column="0" HeightRequest="50" WidthRequest="80" InputTransparent="True" HorizontalOptions="End" />
+                    </Grid>
+                </Grid>
+        </Border>
+
+    </VerticalStackLayout>
+
+</ContentPage>
